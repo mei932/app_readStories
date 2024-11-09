@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
-public class ChapterActivity extends AppCompatActivity {
+public class ChapterActivity extends BaseActivity {
 
     private RecyclerView recyclerViewChapters;
     private ChapterAdapter chapterAdapter;
@@ -19,7 +19,8 @@ public class ChapterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter);
-
+         //xử lý sự kiện nut home
+        setupHomeButton();
         recyclerViewChapters = findViewById(R.id.recyclerViewChapters);
         recyclerViewChapters.setLayoutManager(new LinearLayoutManager(this));
 
@@ -41,5 +42,6 @@ public class ChapterActivity extends AppCompatActivity {
 
         recyclerViewChapters.setAdapter(chapterAdapter);
     }
-
 }
+
+

@@ -45,6 +45,9 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.8")
     implementation("org.jsoup:jsoup:1.16.1")
     implementation ("androidx.sqlite:sqlite:2.1.0")
+    implementation(kotlin("script-runtime"))
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+
 }
 
 
